@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نور — Noor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Pinyon+Script&family=Aref+Ruqaa:wght@400;700&family=Lateef:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Ink texture overlays -->
+  <div class="paper-texture"></div>
+  <div class="ink-bleed-bg"></div>
+
+  <!-- Floating ink petals -->
+  <div class="petal petal-1"></div>
+  <div class="petal petal-2"></div>
+  <div class="petal petal-3"></div>
+  <div class="petal petal-4"></div>
+  <div class="petal petal-5"></div>
+
+  <main class="letter-wrapper">
+
+    <!-- Salutation -->
+    <p class="salutation">for my beloved,</p>
+
+    <!-- Name — large, brushed -->
+    <div class="name-block" id="triggerZone">
+      <h1 class="name-latin">Noor</h1>
+      <h1 class="name-arabic">نور</h1>
+      <div class="ink-underline"></div>
+    </div>
+
+    <!-- Photo with watercolor frame -->
+    <div class="photo-frame-wrapper" id="photoWrap">
+      <div class="watercolor-frame">
+        <div class="frame-wash wash-1"></div>
+        <div class="frame-wash wash-2"></div>
+        <div class="frame-wash wash-3"></div>
+        <img
+          src="/img/fake r3d.jpg"
+   
+          alt="Noor"
+          class="portrait"
+          onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-photo')"
+        />
+        <div class="photo-placeholder">
+          <span>✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Birthday message -->
+    <div class="message-block">
+      <p class="message-date">5 june 2026</p>
+      <div class="message-body">
+        <p>
+Happy birthday to my angelic and gorgeous fiancee: i hope that you are always healthy and happy , also dont worry i would never marry 4 wives only you hahaha.  You know that the journey might not be easy but giving up is never a option , also don't worry about the tawjihi cuz you are gonna definitely cook it and i'm always gonna get your back hehe.  You know that you are the coolest person ever 
+          <span class="laugh"> right?</span>
+        </p>
+        <p>and hey don't speak ill of your  drawings cuz these drawings are cool as hell. Also don't forget to look at your angelic face when you wake up and say that you are gonna cook every single challenge in your life and hey your photography skills are sooo impressive wallah so don't let anyone nor anything get to you, i even flex on everyone about your beautiful photos so don't ever think of stopping XD.  I'm gonna bring you the most beautiful pink tulips. Your beloved fiance
+<span class="laugh"> raad ❤ </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="ink-divider">
+      <span class="divider-dot">✦</span>
+    </div>
+
+    <!-- Poem — hidden by default, revealed on hover -->
+    <div class="poem-container" id="poemContainer" aria-label="Arabic love poem" lang="ar" dir="rtl">
+      <h2 class="poem-title">روحٌ إلى روح</h2>
+      <div class="poem-lines">
+        <p>أنتِ الروحُ والوتينُ، والعهدُ الذي يُناديني،</p>
+        <p>وإنْ أهيمُ في هواكِ، فالهيامُ قليلٌ،</p>
+        <p>وحبٌّ قد أخذَ عقلي، ووجهٌ قد أخذَ أنفاسي،</p>
+        <p>وروحُكِ هي روحي، وجسدي من دونِ روحِكِ فراغٌ،</p>
+        <p>وأنتِ المُنى الذي لا يحيدُ، وأنتِ المُرادُ،</p>
+        <p>وعقلٌ جامحٌ لا يُهزَمُ، وجمالٌ فتّانٌ،</p>
+        <p>فيا نورُ، لا تتركيني في نارِ الشوقِ والعدمِ،</p>
+        <p>وأنتِ النورُ الذي أنارَ قلبي، وكلُّ ما بعدكِ ظلامٌ</p>
+      </div>
+    </div>
+
+    <!-- Hover hint -->
+    <p class="hover-hint" id="hoverHint">hover her name or portrait to read the poem</p>
+
+    <!-- Closing -->
+    <p class="closing">yours, always ✦</p>
+
+  </main>
+
+  <!-- Audio — graceful autoplay with fallback play button -->
+  <!-- Replace src with your audio file path, e.g. src="song.mp3" -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="/song/The Smiths - There Is a Light That Never Goes Out (1).mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Fallback play button (shown only if autoplay is blocked) -->
+  <button class="play-btn" id="playBtn" aria-label="Play music" title="Play music">
+    <span class="play-icon">♪</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
